@@ -1,0 +1,85 @@
+/** @format */
+.section {
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px #999;
+  display: flex;
+  flex-direction: column;
+}
+.section h1 {
+  color: #000;
+  font-size: 25px;
+  letter-spacing: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.section h1::after {
+  content: "";
+  background-color: black;
+  height: 3px;
+  width: 50px;
+  margin-bottom: 20px;
+}
+.section p {
+  max-width: 500px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #333;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  background-color: #ccc;
+  width: 816px;
+  height: 1056px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+header {
+  border-bottom: solid 2px #999;
+}
+header h1 {
+  color: #000;
+  font-weight: 200;
+  font-size: 70px;
+}
+header h2 {
+  color: #999;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.content {
+  display: flex;
+}
+
+.sidebar {
+  flex: 1;
+  border-right: solid 2px #999;
+}
+
+.main {
+  flex: 2;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
