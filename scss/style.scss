@@ -1,11 +1,6 @@
 /** @format */
 
-$background-color: #ccc;
-$background-color-secondary: #333;
-$forecolor: #000;
-$forecolor-secondary: #999;
-$border: solid 2px $forecolor-secondary;
-$margin: 20px;
+@import "global";
 
 %section {
   margin: $margin;
