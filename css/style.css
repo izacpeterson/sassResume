@@ -33,16 +33,20 @@
 body {
   background-color: #d1d1d1;
   font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #201e21 0%, #201e21 40%, white 40%);
 }
 
 .container {
-  background-color: #ebebed;
+  background: linear-gradient(225deg, #201e21 0%, #201e21 19%, white 19%);
   width: 816px;
   height: 1056px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   padding: 50px;
+  margin-top: 50px;
+  box-shadow: -50px 50px 100px black;
 }
 
 header {
@@ -81,6 +85,37 @@ ul {
 a {
   color: #000;
   text-decoration: none;
+}
+
+.skill {
+  margin-bottom: 40px;
+}
+
+.progBar {
+  border: 1px #999 solid;
+  border-radius: 3px;
+  position: relative;
+  font-size: 10px;
+}
+
+.progBar::after {
+  content: "";
+  position: absolute;
+  background-color: #999;
+  height: 100%;
+  left: 0;
+}
+
+#js::after {
+  width: 92%;
+}
+
+#html::after {
+  width: 72%;
+}
+
+#css::after {
+  width: 83%;
 }
 
 /*# sourceMappingURL=style.css.map */

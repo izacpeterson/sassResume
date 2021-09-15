@@ -9,15 +9,30 @@
 body {
   background-color: $background-color-secondary;
   font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #201e21 0%,
+    #201e21 40%,
+    rgba(255, 255, 255, 1) 40%
+  );
 }
 .container {
-  background-color: $background-color;
+  // background-color: $background-color;
+  background: linear-gradient(
+    225deg,
+    #201e21 0%,
+    #201e21 19%,
+    rgba(255, 255, 255, 1) 19%
+  );
   width: 816px;
   height: 1056px;
-  margin: auto;
   display: flex;
   flex-direction: column;
   padding: 50px;
+  margin-top: 50px;
+  box-shadow: -50px 50px 100px black;
 }
 header {
   h1 {
@@ -53,4 +68,31 @@ ul {
 a {
   color: $forecolor;
   text-decoration: none;
+}
+.skill {
+  margin-bottom: 40px;
+}
+.progBar {
+  border: 1px $forecolor-secondary solid;
+  border-radius: 3px;
+  position: relative;
+  font-size: 10px;
+}
+.progBar::after {
+  content: "";
+  position: absolute;
+  background-color: $forecolor-secondary;
+  height: 100%;
+  left: 0;
+}
+#js::after {
+  width: 92%;
+}
+#html::after {
+  width: 72%;
+}
+#css::after {
+  width: 83%;
+}
+svg {
 }
