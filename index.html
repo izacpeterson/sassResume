@@ -18,11 +18,12 @@
     ></script>
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container" id="resume">
+      <div class="gradient"></div>
       <header>
         <h1>Izac</h1>
         <h1>Peterson</h1>
@@ -31,21 +32,21 @@
       <div class="content">
         <div class="sidebar">
           <div class="contact section">
-            <h1>CONTACT</h1>
-            <h2>Adress</h2>
+            <h2>CONTACT</h2>
+            <h3>Adress</h3>
             <span>1600 Pennsylvania Ave.</span>
             <span>Washington DC, 20500</span>
-            <h2>Phone</h2>
+            <h3>Phone</h3>
             <a href="tel:+8018343712">801.834.3712</a>
-            <h2>Email</h2>
+            <h3>Email</h3>
             <a href="mailto:izacpeterson@gmail.com">izacpeterson@gmail.com</a>
-            <h2>Website</h2>
+            <h3>Website</h3>
             <a href="https://www.izacpeterson.com/"
               >https://www.izacpeterson.com/</a
             >
           </div>
           <div class="section">
-            <h1>SKILLS</h1>
+            <h2>SKILLS</h2>
             <div class="skill">
               <h3>Javascript</h3>
               <div class="progBar" id="js">%</div>
@@ -62,7 +63,7 @@
         </div>
         <div class="main">
           <div class="profile section">
-            <h1>PROFILE</h1>
+            <h2>PROFILE</h2>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam,
               totam tenetur, accusamus est maiores dolorum magnam cupiditate
@@ -71,7 +72,7 @@
             </p>
           </div>
           <div class="section">
-            <h1>SOCIAL</h1>
+            <h2>SOCIAL</h2>
             <ul>
               <li>
                 <a href=""><i class="fab fa-facebook"></i> Facebook</a>
@@ -85,7 +86,7 @@
             </ul>
           </div>
           <div class="section">
-            <h1>EDUCATION</h1>
+            <h2>EDUCATION</h2>
             <table>
               <tr>
                 <td rowspan="2">2021-2022</td>
@@ -104,7 +105,7 @@
             </table>
           </div>
           <div class="section">
-            <h1>EXPERIENCE</h1>
+            <h2>EXPERIENCE</h2>
             <table>
               <tr>
                 <td><h3>Blade HQ</h3></td>
@@ -133,5 +134,7 @@
         </div>
       </div>
     </div>
+    <button onclick="print()">Download</button>
   </body>
+  <script src="./app.js"></script>
 </html>
