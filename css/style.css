@@ -55,8 +55,6 @@ h3 {
 
 .container {
   background-color: #ebebed;
-  width: 816px;
-  height: 1056px;
   display: flex;
   flex-direction: column;
   padding: 50px;
@@ -66,7 +64,7 @@ h3 {
 }
 
 .gradient {
-  background: linear-gradient(225deg, #201e21 0%, #201e21 19%, #fff 19%, #ebebed 20%, rgba(0, 0, 0, 0) 20%);
+  background: linear-gradient(225deg, #201e21 0%, #201e21 19%, #ebebed 19%, #ebebed 20%, rgba(0, 0, 0, 0) 20%);
   position: absolute;
   top: 0;
   left: 0;
@@ -99,7 +97,7 @@ header h2 {
   flex: 2;
 }
 
-ul {
+#social ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -140,6 +138,29 @@ a {
 
 #css::after {
   width: 83%;
+}
+
+#experience ul {
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .gradient {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    border-right: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
