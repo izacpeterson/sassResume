@@ -9,6 +9,7 @@
 }
 .section h1 {
   color: #000;
+  background-color: #ebebed;
   font-size: 25px;
   letter-spacing: 5px;
   display: flex;
@@ -31,6 +32,8 @@
 }
 
 body {
+  color: #000;
+  background-color: #ebebed;
   background-color: #d1d1d1;
   font-family: "Raleway", sans-serif;
   display: flex;
@@ -54,6 +57,7 @@ h3 {
 }
 
 .container {
+  color: #000;
   background-color: #ebebed;
   display: flex;
   flex-direction: column;

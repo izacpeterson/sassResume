@@ -7,6 +7,10 @@ $forecolor-secondary: #999;
 $border: solid 2px $forecolor-secondary;
 $margin: 20px;
 $fontSize: 15px;
+@mixin colorScheme($fcol, $bcol) {
+  color: $fcol;
+  background-color: $bcol;
+}
 %section {
   margin: $margin;
   padding-bottom: $margin;
@@ -14,7 +18,7 @@ $fontSize: 15px;
   display: flex;
   flex-direction: column;
   h1 {
-    color: $forecolor;
+    @include colorScheme($forecolor, $background-color);
 
     font-size: 25px;
     letter-spacing: 5px;

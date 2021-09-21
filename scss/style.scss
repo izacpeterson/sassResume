@@ -7,6 +7,7 @@
   padding: 0;
 }
 body {
+  @include colorScheme($forecolor, $background-color);
   background-color: $background-color-secondary;
   font-family: "Raleway", sans-serif;
   // font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -28,7 +29,8 @@ h3 {
   font-weight: 100;
 }
 .container {
-  background-color: $background-color;
+  @include colorScheme($forecolor, $background-color);
+
   // width: 816px;
   // height: 1056px;
   display: flex;
